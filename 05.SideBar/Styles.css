@@ -1,0 +1,117 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: hsl(210, 36%, 96%);
+}
+
+/* Main */
+#toggle-container{
+    position: relative;
+}
+#toggle-btn{
+    position: absolute;
+    top: 4%;
+    right: 5%;
+    font-size: 30px;
+    color: hsl(205, 78%, 60%);
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    transition: all 0.3s linear;
+    animation: bounce 2s ease-in-out infinite;
+}
+#toggle-btn:hover{
+    color: hsl(205, 86%, 17%);
+    transform: rotate(90deg);
+}
+/* Left-Block */
+.left-block{
+    position: relative;
+    padding-bottom: 350px;
+    background-color: white;
+    width: 400px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+.main-heading{
+    padding: 20px 10px;
+    position: relative;
+}
+#header{
+    transform: translate(-5%, -50%);
+    font-family: 'New Tegomin', serif;
+    font-weight: 700;
+    font-size: 40px;
+}
+.close-btn{
+    margin-left: 50px;
+    font-size: 1.75rem;
+    background: transparent;
+    border-color: transparent;
+    color: hsl(205, 78%, 60%);
+    transition:  all 0.3s linear;
+    cursor: pointer;
+    color:  hsl(360, 67%, 44%);
+    outline: none;
+}
+.close-btn:hover{
+    color: hsl(360, 71%, 66%);
+    transform: rotate(360deg);
+}
+
+/* Lists Container */
+.lists-container{
+    margin-top: 30px;
+}
+.lists-container > span{
+    color: hsl(210, 22%, 49%);
+    display: block;
+    font-size: 27px;
+    font-family: 'Titillium Web', sans-serif;
+    padding: 15px;
+    cursor: pointer;
+    letter-spacing: 0.156rem;
+    transition: all 0.3s linear;
+}
+.lists-container > span:hover{
+    color:  hsl(205, 78%, 60%);
+    background-color: hsl(205, 86%, 81%);
+    padding-left: 1.5rem;
+}
+/* Icons Container */
+
+.icons-container{
+    width: 100%;
+    text-align: center;
+    margin-top: 280px;
+}
+.icons-container > span{
+    margin: 0 8px;
+    font-size: 30px;
+    color: hsl(205, 90%, 76%);
+    cursor: pointer;
+    background: transparent;
+    transition:  all 0.3s linear;
+}
+.icons-container > span:hover{
+    color: hsl(205, 78%, 60%)
+}
+
+.left-block{
+    width: 0;
+    overflow: hidden;
+}
+.show-leftblock{
+    width: 400px;
+}
+
+@keyframes bounce {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }

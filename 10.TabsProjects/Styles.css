@@ -1,0 +1,113 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: hsl(210, 36%, 96%);
+}
+h1{
+    letter-spacing: 0.20rem;
+    text-transform: capitalize;
+    font-size: 65px;
+    font-family: 'Titillium Web', sans-serif;
+}
+h2{
+    font-size: 20px;
+    letter-spacing: 0.2rem;
+    text-transform: capitalize;
+    font-family: 'Titillium Web', sans-serif;
+}
+.tab-btn{
+    text-transform: capitalize;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    padding: 8px 60px;
+    background-color: #fff;
+    margin: 0 1px;
+}
+p{
+    margin-top: -20px;
+    margin-bottom: 70px;
+    font-size: 23px;
+}
+
+/* Main */
+.upper-container{
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    width: 60%;
+    height: 200px;
+}
+
+/* Left-container */
+.lower-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.left-imgcontainer{
+    text-align: center;
+}
+#image{
+    border-radius: 15px;
+    width: 90%;
+    height: 400px;
+    box-shadow: 0 5px 30px rgba(0,0,0,0.2);
+}
+.right-container{
+    width: 100%;
+    text-align: center;
+    min-width: 100px;
+}
+.content-container{
+    border-radius: 15px;
+    margin: 0 auto;
+    width: 75%;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 24px;
+    text-align: left;
+    background: #fff;
+    padding: 0 40px;
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+.buttons-container{
+    margin: 0 auto;
+    width: 85%;
+    display: flex;
+}
+.tab-btn{
+    width: 33.3%;
+    font-size: 20px;
+    border-radius: 6px;
+    padding: 15px 0;
+    background: #fff;
+    transition: all 0.3s linear;
+}
+.content{
+    font-size: 22px;
+    line-height: 2.5rem;
+    display: none;
+}
+.content.active{
+    display: block;
+}
+@media screen and (max-width: 990px) {
+    .lower-container{
+        grid-template-columns: 100%;
+    }
+    .left-imgcontainer{
+        margin: 0 auto;
+        text-align: center;
+        width: 90%;
+        margin-bottom: 30px;
+    }
+    #image{
+        margin: 0 auto;
+    }
+}
+
+#history{
+    background: hsl(212, 33%, 89%);
+}
